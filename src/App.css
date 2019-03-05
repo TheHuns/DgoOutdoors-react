@@ -1,33 +1,45 @@
-.App {
-  text-align: center;
+body {
+   font-family: "Ubuntu", sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+/* Headers */
+header {
+   background: #555;
+   color: #f3f3f3;
+}
+.main-header {
+   height: 8vh;
+   position: absolute;
+   top: 0;
+   width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.lower-header {
+   height: 8vh;
+   position: absolute;
+   bottom: 0;
+   width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+/* Main info box in center */
+.container {
+   position: absolute;
+   width: 80%;
+   height: 70vh;
+   border: 1px #444 solid;
+   top: 15vh;
+   left: 10%;
+   display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left-links {
+   border: 1px solid red;
+   flex-grow: 1;
+}
+.right-links {
+   border: 1px solid red;
+   flex-grow: 1;
+}
+.main-info {
+   flex-grow: 5;
 }

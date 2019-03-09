@@ -1,17 +1,39 @@
+/* loader: 'url-loader' */
+
 body {
    font-family: "Ubuntu", sans-serif;
+   background: #f2f2f2;
 }
 
 /* Headers */
 header {
    background: #555;
-   color: #f3f3f3;
+   color: #f5f5f5;
+}
+img {
+   color: #f5f5f5;
 }
 .main-header {
    height: 8vh;
    position: absolute;
    top: 0;
    width: 100%;
+   display: flex;
+}
+
+.main-header ul {
+   display: flex;
+   list-style: none;
+   align-self: center;
+   margin-left: auto;
+}
+.main-header ul a {
+   text-decoration: none;
+   color: #f5f5f5;
+   padding-right: 1.5rem;
+}
+.main-header li {
+   align-self: center;
 }
 
 .lower-header {
@@ -19,27 +41,92 @@ header {
    position: absolute;
    bottom: 0;
    width: 100%;
+   background: #f2f2f2;
+}
+.lower-header ul {
+   text-align: center;
+}
+.lower-header a {
+   text-decoration: none;
+   color: #f5f5f5;
+   background: #444;
+   padding: 0.5rem 1rem;
+   border: 2px solid #555;
+   border-radius: 4%;
+   display: inline-block;
+   margin: 0 1rem;
+}
+.lower-header a.active,
+.lower-header a:hover {
+   background: #f5f5f5;
+   color: #444;
 }
 
+/* Home */
+.home {
+   height: 84vh;
+   position: absolute;
+   top: 8vh;
+   width: 100%;
+}
+.home img {
+   max-height: 84vh;
+   width: 100%;
+}
+#start-button {
+   position: absolute;
+   bottom: 10%;
+   left: 45%;
+   z-index: 1;
+   color: #f5f5f5;
+   background: #444;
+   padding: 0.5rem 1rem;
+   border: 1px solid #555;
+   border-radius: 3%;
+   text-decoration: none;
+}
 /* Main info box in center */
 .container {
    position: absolute;
    width: 80%;
    height: 70vh;
-   border: 1px #444 solid;
    top: 15vh;
    left: 10%;
    display: flex;
 }
-
-.left-links {
-   border: 1px solid red;
-   flex-grow: 1;
+.links-container {
+   display: flex;
+   width: 100%;
 }
-.right-links {
-   border: 1px solid red;
-   flex-grow: 1;
+.main-nav {
+   width: 20%;
 }
-.main-info {
-   flex-grow: 5;
+.main-nav ul {
+   display: flex;
+   flex-direction: column;
+   list-style: none;
+   padding-inline-start: 20px;
+   padding-right: 20px;
+}
+.main-nav li {
+   padding: 0.5rem;
+   text-decoration: none;
+   text-align: center;
+}
+.main-nav a {
+   text-decoration: none;
+   color: #f5f5f5;
+   background: #444;
+   padding: 0.5rem 1rem;
+   border: 2px solid #555;
+   border-radius: 4%;
+   display: block;
+}
+.main-nav a.active,
+.main-nav a:hover {
+   background: #f5f5f5;
+   color: #444;
+}
+.display-area {
+   width: 80%;
 }

@@ -4,7 +4,7 @@ export default class Header extends Component {
    render() {
       return (
          <header className="main-header">
-            <img src="./img/logo1.png" alt="" />
+            <h1>SwCo Outdoors</h1>
             <ul>
                <li>
                   <a href="/">About</a>

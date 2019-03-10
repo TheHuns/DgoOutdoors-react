@@ -5,11 +5,24 @@ import "./App.css";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import NotFound from "./components/NotFound";
-import LowerHeader from "./components/LowerHeader";
 import MainContent from "./components/MainContent";
 
+const noaaToken = "zwIdTocxXquXRrPQuyLJMWCOEKVCEgzQ";
+
 class App extends Component {
+   state = {
+      data: null
+   };
+
+   componentDidMount() {
+      fetch("https://api.weather.gov/points/37.26881, 107.8843")
+         .then(response => response.json())
+         .then(data => this.setState({ data }))
+         .then(console.log(this.state.data));
+   }
+
    render() {
+      const { data } = this.state;
       return (
          <BrowserRouter>
             <React.Fragment>
@@ -19,7 +32,6 @@ class App extends Component {
                   <Route path="/maincontent" component={MainContent} />
                   <Route component={NotFound} />
                </Switch>
-               <LowerHeader />
             </React.Fragment>
          </BrowserRouter>
       );

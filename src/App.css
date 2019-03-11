@@ -19,7 +19,8 @@ header {
 }
 header h1 {
    align-self: center;
-   padding-left: 2rem;
+   padding-left: 0.5rem;
+   color: var(--primary-color);
 }
 
 .main-header {
@@ -29,6 +30,15 @@ header h1 {
    width: 100%;
    display: flex;
    border-bottom: 2px solid var(--secondary-color);
+}
+.home-logo {
+   display: flex;
+   text-decoration: none;
+   padding-left: 2rem;
+}
+.home-logo i {
+   align-self: center;
+   color: var(--primary-color);
 }
 
 .main-header ul {

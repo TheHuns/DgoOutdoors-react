@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { NavLink, Route, Redirect } from "react-router-dom";
+// import RiverTemplate from "./RiverTemplate";
 import AnimasDurango from "./AnimasDurango";
 import Piedra from "./Piedra";
 import SanJuan from "./SanJuan";

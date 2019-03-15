@@ -9,7 +9,6 @@
 body {
    font-family: "Ubuntu", sans-serif;
    background: #f2f2f2;
-   overflow: hidden;
 }
 
 /* Headers */
@@ -24,8 +23,7 @@ header h1 {
 }
 
 .main-header {
-   height: 8vh;
-   position: absolute;
+   height: 50px;
    top: 0;
    width: 100%;
    display: flex;
@@ -57,18 +55,25 @@ header h1 {
 }
 
 .lower-header {
-   height: 8vh;
+   height: 80px;
    position: absolute;
-   top: 8vh;
    width: 100%;
-   background: var(--secondary-color);
+   background: rgba(150, 156, 156, 0.6);
+   top: 170px;
+   z-index: 3;
    display: flex;
-   justify-content: center;
+}
+.link-bg-img {
+   position: relative;
+   height: 200px;
+   width: 100%;
+   z-index: 2;
 }
 .lower-header ul {
-   text-align: center;
+   justify-self: center;
    align-self: center;
-   margin: 0;
+   padding: 0;
+   margin: auto;
 }
 .lower-header a {
    text-decoration: none;
@@ -89,20 +94,20 @@ header h1 {
 
 /* Home */
 .home {
-   height: 84vh;
+   height: 100%;
    position: absolute;
-   top: 8vh;
+   top: 50px;
    width: 100%;
 }
 .home img {
-   max-height: 92vh;
+   height: 100%;
    width: 100%;
 }
 #start-button {
    position: absolute;
-   bottom: 3%;
+   bottom: 12%;
    left: 45%;
-   z-index: 1;
+   z-index: 2;
    color: #f5f5f5;
    background: #444;
    padding: 0.5rem 1rem;
@@ -113,10 +118,10 @@ header h1 {
 
 /* Main info box in center */
 .container {
-   position: absolute;
    width: 80%;
    height: 70vh;
-   top: 20vh;
+   margin-top: 50px;
+   margin-bottom: 50px;
    left: 10%;
    display: flex;
 }

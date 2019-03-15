@@ -9,6 +9,7 @@ export default class MainContent extends Component {
    render() {
       return (
          <React.Fragment>
+            <LowerHeader />
             <div className="container">
                <Route
                   exact
@@ -19,7 +20,6 @@ export default class MainContent extends Component {
                <Route path="/maincontent/snow" component={SnowLinks} />
                <Route path="/maincontent/river" component={RiverLinks} />
             </div>
-            <LowerHeader />
          </React.Fragment>
       );
    }

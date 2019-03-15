@@ -1,21 +1,24 @@
-import React from "react";
+import React, { Component } from "react";
 
-export default function AnimasDurango() {
-   return (
-      <React.Fragment>
-         <div id="plot1" />
-         <h3>Animas River in Durango</h3>
-         {/* <script>
-            {GWIS.plot({
-               div_id: "plot1",
-               series: [{ site: "09361500", pcode: "00060" }],
-               title: "Animas River at Durango",
-               xlabel: "Date/Time",
-               ylabel: "Flow in CFS",
-               legend: "onmouseover"
-            })}
-            ;
-         </script> */}
-      </React.Fragment>
-   );
+export default class AnimasDurango extends Component {
+   getDate = () => {
+      let time = new Date().getTime();
+      return time;
+   };
+
+   render() {
+      return (
+         <React.Fragment>
+            <h3>Animas River in Durango</h3>
+
+            <img
+               src={`http://waterdata.usgs.gov/nwisweb/graph?agency_cd=USGS&site_no=09361500&parm_cd=00060&period=7&cacheTime=${this.getDate()}`}
+               height="90%"
+               width="90%"
+               alt="Hydrograph for site 09361500 and parameter 00060. Click to see a full size."
+               title="Hydrograph for site 09361500 and parameter 00060. Click to see a full size."
+            />
+         </React.Fragment>
+      );
+   }
 }

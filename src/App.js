@@ -1,14 +1,13 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
+import "./main";
 import api from "./api.json";
 // import "../public/css/main.css";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import NotFound from "./components/NotFound";
 import MainContent from "./components/MainContent";
-
-const noaaToken = "zwIdTocxXquXRrPQuyLJMWCOEKVCEgzQ";
 
 class App extends Component {
    state = {

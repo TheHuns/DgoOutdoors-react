@@ -118,11 +118,11 @@ header h1 {
 
 /* Main info box in center */
 .container {
-   width: 80%;
+   width: 90%;
+   margin: auto;
    height: 70vh;
    margin-top: 50px;
    margin-bottom: 50px;
-   left: 10%;
    display: flex;
 }
 .links-container {

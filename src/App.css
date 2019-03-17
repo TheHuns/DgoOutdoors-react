@@ -131,6 +131,7 @@ header h1 {
 }
 .main-nav {
    width: 20%;
+   padding-right: 1rem;
 }
 .main-nav ul {
    display: flex;

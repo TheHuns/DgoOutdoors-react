@@ -15,8 +15,8 @@ export default class AnimasDurango extends Component {
                src={`http://waterdata.usgs.gov/nwisweb/graph?agency_cd=USGS&site_no=09361500&parm_cd=00060&period=7&cacheTime=${this.getDate()}`}
                height="90%"
                width="90%"
-               alt="Hydrograph for site 09361500 and parameter 00060. Click to see a full size."
-               title="Hydrograph for site 09361500 and parameter 00060. Click to see a full size."
+               alt="Hydrograph for site 09361500 and parameter 00060."
+               title="Hydrograph for site 09361500 and parameter 00060."
             />
          </React.Fragment>
       );

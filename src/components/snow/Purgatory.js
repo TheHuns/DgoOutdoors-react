@@ -3,11 +3,11 @@ import React from "react";
 export default function Purgatory() {
    return (
       <iframe
-         width="100%"
-         height="100%"
+         width="95%"
+         height="95%"
          scrolling="yes"
          frameBorder="0"
-         title="Durango-Weather"
+         title="Purgatory-Snow-Report"
          src="https://www.purgatoryresort.com/snow-report"
       />
    );

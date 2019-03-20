@@ -2,7 +2,8 @@ import React from "react";
 
 export default function WolfCreek() {
   const divStyle = {
-    width: "700px"
+    width: "700px",
+    margin: "auto"
   };
   const iframeStyle = {
     display: "block"

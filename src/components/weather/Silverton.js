@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Durango() {
+export default function Silverton() {
   const divStyle = {
     width: "700px",
     margin: "auto"
@@ -21,19 +21,18 @@ export default function Durango() {
     <div style={divStyle}>
       <iframe
         style={iframeStyle}
-        src="https://cdnres.willyweather.com/widget/loadView.html?id=104808"
+        src="https://cdnres.willyweather.com/widget/loadView.html?id=104851"
         width="700"
         height="520"
         frameborder="0"
         scrolling="no"
-        title="Durango Weather"
+        title="Silverton Weather"
       />
       <a
         style={aStyle}
-        href="https://www.willyweather.com/co/la-plata-county/durango.html"
-        rel="nofollow"
+        href="https://www.willyweather.com/co/san-juan-county/silverton.html"
       >
-        durango weather information
+        Silveton weather information
       </a>
     </div>
   );

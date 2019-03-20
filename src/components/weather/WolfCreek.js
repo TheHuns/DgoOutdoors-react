@@ -1,14 +1,43 @@
 import React from "react";
 
 export default function WolfCreek() {
-   return (
+  const divStyle = {
+    width: "700px"
+  };
+  const iframeStyle = {
+    display: "block"
+  };
+  const aStyle = {
+    height: "20px",
+    margin: "-20px 0 0 0",
+    display: "block",
+    textIndent: "-9999em",
+    position: "relative",
+    zIndex: "1"
+  };
+
+  return (
+    <div style={divStyle}>
       <iframe
-         src="https://forecast.weather.gov/MapClick.php?lon=-106.79466247558595&lat=37.478127628721225#.XAGd0GhKiUk"
-         width="100%"
-         height="100%"
-         scrolling="yes"
-         frameborder="0"
-         title="Wolf-Creek-Weather"
+        style={iframeStyle}
+        src="https://cdnres.willyweather.com/widget/loadView.html?id=104809"
+        width="700"
+        height="520"
+        frameborder="0"
+        scrolling="no"
+        title="Wolf Creek Ski Weather"
       />
-   );
+      <a
+        style={aStyle}
+        href="https://www.willyweather.com/co/mineral-county/wolf-creek-ski-area.html"
+        rel="nofollow"
+      >
+        Wolf Creek Ski weather information
+      </a>
+      <i>
+        * Warning, Radar, Satellite, Synoptic links at bottom of display will
+        take you to external site (willyweather.com).{" "}
+      </i>
+    </div>
+  );
 }

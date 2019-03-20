@@ -1,14 +1,31 @@
 import React from "react";
 
 export default function Purgatory() {
-   return (
+  const iframeStyle = {
+    width: "700px",
+    height: "370px",
+    border: "0",
+    frameBorder: "0"
+  };
+
+  return (
+    <div>
       <iframe
-         width="95%"
-         height="95%"
-         scrolling="yes"
-         frameBorder="0"
-         title="Purgatory-Snow-Report"
-         src="https://www.purgatoryresort.com/snow-report"
+        id="o92867"
+        style={iframeStyle}
+        scrolling="no"
+        src="https://www.onthesnow.com/widget/snow?resort=330&webcam=1&color=g"
+        title="Purgatory snow report"
       />
-   );
+      <p>
+        <i>Snow information provided by: </i>
+        <a
+          href="https://www.onthesnow.com/colorado/durango-mountain-resort/skireport.html"
+          target="_blank"
+        >
+          OnTheSnow.com
+        </a>
+      </p>
+    </div>
+  );
 }

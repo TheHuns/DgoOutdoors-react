@@ -24,7 +24,7 @@ export default function Durango() {
         src="https://cdnres.willyweather.com/widget/loadView.html?id=104808"
         width="700"
         height="520"
-        frameborder="0"
+        frameBorder="0"
         scrolling="no"
         title="Durango Weather"
       />

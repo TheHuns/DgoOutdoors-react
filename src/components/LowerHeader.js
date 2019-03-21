@@ -1,28 +1,35 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Redirect } from "react-router-dom";
 import river from "../img/river.jpg";
+import snow from "../img/snow.jpeg";
+import weather from "../img/weather.jpg";
 
 export default class LowerHeader extends Component {
-  // clickHandler = e => {
-  //    if (e.target.id === 1) {
-  //       this.setState({
-  //          url: "../img/weather.jpg"
-  //       });
-  //    } else if (e.target.id === 2) {
-  //       this.setState({
-  //          url: "../img/snow.jpg"
-  //       });
-  //    } else if (e.target.id === 3) {
-  //       this.setState({
-  //          url: "../img/river.jpg"
-  //       });
-  //    }
-  // };
+  state = {
+    imgUrl: river
+  };
+
+  clickHandler = e => {
+    const { imgUrl } = this.state;
+    if (e.target.id === 1) {
+      this.setState(imgUrl => ({
+        imgUrl: weather
+      }));
+    } else if (e.target.id === 2) {
+      this.setState({
+        imgUrl: snow
+      });
+    } else if (e.target.id === 3) {
+      this.setState({
+        imgUrl: river
+      });
+    }
+    console.dir(e.target);
+  };
 
   render() {
-    let imgUrl = "../img/river.jpg";
     let styles = {
-      backgroundImage: `url(${river})`,
+      backgroundImage: `url(${this.state.imgUrl})`,
       backgroundSize: "cover",
       backgroundPosition: "0% 70%",
       overflow: "hidden"

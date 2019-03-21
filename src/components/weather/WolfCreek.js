@@ -35,10 +35,6 @@ export default function WolfCreek() {
       >
         Wolf Creek Ski weather information
       </a>
-      <i>
-        * Warning, Radar, Satellite, Synoptic links at bottom of display will
-        take you to external site (willyweather.com).{" "}
-      </i>
     </div>
   );
 }

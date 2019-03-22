@@ -59,7 +59,7 @@ header h1 {
   position: absolute;
   width: 100%;
   background: rgba(150, 156, 156, 0.6);
-  top: 170px;
+  top: 190px;
   z-index: 3;
   display: flex;
 }

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { NavLink, Redirect } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import river from "../img/river.jpg";
 import snow from "../img/snow.jpeg";
 import weather from "../img/weather.jpg";
@@ -10,11 +10,10 @@ export default class LowerHeader extends Component {
   };
 
   clickHandler = e => {
-    const { imgUrl } = this.state;
     if (e.target.id === 1) {
-      this.setState(imgUrl => ({
+      this.setState({
         imgUrl: weather
-      }));
+      });
     } else if (e.target.id === 2) {
       this.setState({
         imgUrl: snow

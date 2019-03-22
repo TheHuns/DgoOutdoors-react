@@ -32,7 +32,7 @@ export default class Header extends Component {
     };
     return (
       <Navbar color="light" light expand="md">
-        <NavbarBrand to="/" style={style}>
+        <NavbarBrand href="/" style={style}>
           <i className="fas fa-mountain fa-2x" />
           <h1>SwCo Outdoors</h1>
         </NavbarBrand>

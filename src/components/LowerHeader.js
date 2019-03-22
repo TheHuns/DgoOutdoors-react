@@ -6,24 +6,13 @@ import weather from "../img/weather.jpg";
 
 export default class LowerHeader extends Component {
   state = {
-    imgUrl: river
+    imgUrl: weather
   };
 
-  clickHandler = e => {
-    if (e.target.id === 1) {
-      this.setState({
-        imgUrl: weather
-      });
-    } else if (e.target.id === 2) {
-      this.setState({
-        imgUrl: snow
-      });
-    } else if (e.target.id === 3) {
-      this.setState({
-        imgUrl: river
-      });
-    }
-    console.dir(e.target);
+  clickHandler = url => {
+    this.setState({
+      imgUrl: url
+    });
   };
 
   render() {
@@ -45,14 +34,22 @@ export default class LowerHeader extends Component {
             <NavLink
               to="/maincontent/weather"
               id="1"
-              onClick={this.clickHandler}
+              onClick={() => this.clickHandler(weather)}
             >
               Local Weather
             </NavLink>
-            <NavLink to="/maincontent/snow" id="2" onClick={this.clickHandler}>
+            <NavLink
+              to="/maincontent/snow"
+              id="2"
+              onClick={() => this.clickHandler(snow)}
+            >
               Snow Report
             </NavLink>
-            <NavLink to="/maincontent/river" id="3" onClick={this.clickHandler}>
+            <NavLink
+              to="/maincontent/river"
+              id="3"
+              onClick={() => this.clickHandler(river)}
+            >
               River Flows
             </NavLink>
           </ul>

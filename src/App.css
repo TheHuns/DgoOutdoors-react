@@ -169,3 +169,32 @@ header h1 {
   padding-bottom: 3rem;
   border-radius: 2%;
 }
+
+@media screen and (max-width: 780px) {
+  #root .navbar-brand h1,
+  #root .navbar-brand i {
+    font-size: 1.5rem;
+  }
+
+  #root .lower-header {
+    height: 140px;
+    top: 150px;
+  }
+  #root .link-bg-img {
+    height: 250px;
+  }
+  #root .lower-header ul {
+    display: flex;
+    flex-direction: column;
+  }
+  #root .lower-header a {
+    margin-bottom: 0.3rem;
+  }
+
+  #root .links-container {
+    flex-direction: column;
+  }
+  #root .main-nav {
+    width: 80%;
+  }
+}

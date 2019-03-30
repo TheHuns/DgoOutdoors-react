@@ -17,32 +17,6 @@ class App extends Component {
     items: []
   };
 
-  // componentDidMount() {
-  //    fetch(
-  //       `https://api.openweathermap.org/data/2.5/forecast?zip=81301,us&appid=${
-  //          api.key
-  //       }`
-  //    )
-  //       .then(res => res.json())
-  //       .then(
-  //          result => {
-  //             this.setState({
-  //                isLoaded: true,
-  //                items: result
-  //             });
-  //          },
-  //          // Note: it's important to handle errors here
-  //          // instead of a catch() block so that we don't swallow
-  //          // exceptions from actual bugs in components.
-  //          error => {
-  //             this.setState({
-  //                isLoaded: true,
-  //                error
-  //             });
-  //          }
-  //       );
-  // }
-
   render() {
     const { items } = this.state;
     return (
